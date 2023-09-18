@@ -1,0 +1,80 @@
+/*Colors Used
+Background Color: White #FFF9F9
+Header Text: Black #12ODOD
+Body Text: Black #3E3131
+*/
+body {
+    background-color: #fff9f9
+    font-family 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #3e3131;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat' ;
+    line-height: 1.4;
+}
+h1{
+    font-size: 2.75em;
+    font-weight: 700;
+}
+h2{
+    font-size: 2.25em;
+    font-weight: 700;
+}
+h3{
+    font-size: 1.75em; 
+    font-weight: 400;
+}
+h4{
+    font-size: 1.35em;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+a:hover {
+color: red;
+text-decoration: underline;
+}
+a:visited {
+    color:pink;
+
+}
+a:active {
+    color:purple;
+
+}
+a:focus {
+    outline:2px solid blue;
+
+}
+
+.button {
+    display: inline-block;
+    background-color: #f8e0f7;
+    color: #ffffff
+    font-weight 400; 
+    padding: 10px; 
+    border-radius: 3px; 
+    border-bottom: 2px solid #efe5ee
+    transition 0.2s opacity;
+}
+.button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.buton.contact {
+    background-color: transparent;
+    color: #f8e0f7;
+    text-transform: uppercase;
+    border: 2px solid #f8e0f7
+}
+.buton.contact:hover {
+    background-color: #f8e0f7;
+    color: #ffffff;
+}
