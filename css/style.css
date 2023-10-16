@@ -4,12 +4,54 @@ Header Text: Black #12ODOD
 Body Text: Black #3E3131
 */
 /*Layout Styling*/
+@keyframes color-change {
+     0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+    }
+    .sun {
+        animation-duration: 4s;
+        animation-name: color-change;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to{transform: translate(100px,48px);}
+}
+.cloud-back {
+    animation-duration: 34s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
 #hero {
     background-color: FFF9F9;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
     position: relative;
+    text-align: center;
+}
+#hero span {
+    display: block;
 }
 .css-box-shadow {
 	/*start ------------*/
@@ -30,6 +72,11 @@ Body Text: Black #3E3131
 }
 .row {
     margin: 25px 0;
+}
+.row:after {
+content: "";
+clear: both;
+display: table;
 }
 #title .row {
     padding: 0 12px;
@@ -53,7 +100,7 @@ nav > ul > li > a {
 header {
     background-color: #e4c6c6;
     text-align: center;
-    padding: 10px 0;
+    padding: 99px 0;
     margin: 10px;
     border-bottom: 3px solid #eacdcd; 
 }
@@ -116,6 +163,7 @@ nav > ul > li > a:focus {
     background-color: #eacdcd;
     color: #ffffff;
     font-weight: 400; 
+    text-decoration: none;
     padding: 10px; 
     border-radius: 3px; 
     border-bottom: 2px solid #eacdcd;
@@ -134,4 +182,33 @@ nav > ul > li > a:focus {
 .buton.contact:hover {
     background-color: #eacdcd;
     color: #ffffff;
+}
+/*Medium devices(640px and larger*/
+@media only screen and (min-width:640px) {
+    header {text-align: unset;
+    }
+    nav { width: auto;
+    float: right; 
+    margin-top: 4px;
+    }
+    body {font-size: 18px;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+}
+
+/*Large devices (1024px or larger)*/
+@media only screen and (min-width:1024px) {
+.col-lg-5 {
+    width: 41.66%
+    }
+.col-lg-7 {
+    width: 58.33%
+    }
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    }
 }
