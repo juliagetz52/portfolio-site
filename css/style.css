@@ -4,6 +4,7 @@ Header Text: Black #12ODOD
 Body Text: Black #3E3131
 */
 /*Layout Styling*/
+* {box-sizing: border-box;}
 @keyframes color-change {
      0% {fill: #edc655;}
     50% {fill: #fcffad;}
@@ -183,6 +184,20 @@ nav > ul > li > a:focus {
     background-color: #eacdcd;
     color: #ffffff;
 }
+.col-sm-12 {
+    width: 100%;
+}
+.about-picture {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+.image-row {
+    display: flex;
+}
+.image-col {
+    padding: 0 10px;
+}
 /*Medium devices(640px and larger*/
 @media only screen and (min-width:640px) {
     header {text-align: unset;
@@ -203,9 +218,15 @@ nav > ul > li > a:focus {
 .col-lg-5 {
     width: 41.66%
     }
+.col-lg-6 {
+    width: 50%;
+}
 .col-lg-7 {
     width: 58.33%
     }
+.col-lg-12 {
+    width: 100;
+}
 .container {
     max-width: 1200px;
     margin-left: auto;
