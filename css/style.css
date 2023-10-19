@@ -198,6 +198,18 @@ nav > ul > li > a:focus {
 .image-col {
     padding: 0 10px;
 }
+.social {
+    text-align: center;
+}
+.social a {
+    display: inline-block;
+    max-width: 50px;
+    margin: 0 5px;
+}
+.social svg {
+    width: 50px;
+    height: auto;
+}
 /*Medium devices(640px and larger*/
 @media only screen and (min-width:640px) {
     header {text-align: unset;
