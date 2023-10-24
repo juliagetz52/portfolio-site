@@ -1,1 +1,1 @@
-console.log("Hi, this is Julia's portfolio");
+console.log("Hi, this is Julia's portfolio"); 
